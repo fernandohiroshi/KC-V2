@@ -5,25 +5,26 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 
 const FAQ = () => {
-  const t = useTranslations('FAQSection');
-  const faqs = t.raw('items') as Array<{ question: string; answer: string }>;
+  const t = useTranslations("FAQSection");
+  const faqs = t.raw("items") as Array<{ question: string; answer: string }>;
 
   return (
-    <section className="py-8 md:py-16 lg:py-24 max-w-6xl mx-auto animate-fade-in-up mb-12 md:mb-24">
+    <section
+      className="py-8 md:py-16 lg:py-24 max-w-6xl mx-auto animate-fade-in-up mb-12 md:mb-24"
+      id="faq"
+    >
       <div className="max-w-4xl mx-auto space-y-12">
         {/* Header */}
         <div className="text-start space-y-4">
           <p className="text-sm font-medium text-muted-foreground tracking-wider uppercase">
-            {t('label')}
+            {t("label")}
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold">
-            {t('title')}
-          </h2>
+          <h2 className="text-3xl lg:text-4xl font-bold">{t("title")}</h2>
           <p className="text-base text-muted-foreground max-w-2xl pl-2">
-            {t('description')}
+            {t("description")}
           </p>
         </div>
 
@@ -49,12 +50,8 @@ const FAQ = () => {
 
         {/* CTA */}
         <div className="text-start pt-8">
-          <p className="text-muted-foreground mb-2">
-            {t('ctaTitle')}
-          </p>
-          <p className="text-sm text-muted-foreground">
-            {t('ctaDescription')}
-          </p>
+          <p className="text-muted-foreground mb-2">{t("ctaTitle")}</p>
+          <p className="text-sm text-muted-foreground">{t("ctaDescription")}</p>
         </div>
       </div>
     </section>

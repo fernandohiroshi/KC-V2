@@ -87,18 +87,18 @@ const Header = () => {
                   {t("navigation.services")}
                 </Link>
                 <Link
-                  href="#contact"
-                  className="text-sm font-medium text-muted-foreground hover:text-purple-500 focus:text-purple-500"
-                  onClick={() => setOpen(false)}
-                >
-                  {t("navigation.contact")}
-                </Link>
-                <Link
                   href="#faq"
                   className="text-sm font-medium text-muted-foreground hover:text-purple-500 focus:text-purple-500"
                   onClick={() => setOpen(false)}
                 >
                   {t("navigation.faq")}
+                </Link>
+                <Link
+                  href="#contact"
+                  className="text-sm font-medium text-muted-foreground hover:text-purple-500 focus:text-purple-500"
+                  onClick={() => setOpen(false)}
+                >
+                  {t("navigation.contact")}
                 </Link>
               </div>
               <div className="flex justify-center mt-8">
@@ -106,30 +106,30 @@ const Header = () => {
               </div>
               <div className="absolute bottom-0 left-0 w-full pb-6">
                 <div className="flex justify-center gap-3">
-                  <Link
-                    href="#"
+                  <a
+                    href="https://www.linkedin.com/company/konbini-code"
                     className="w-8 h-8 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <Linkedin className="w-4 h-4" />
-                  </Link>
-                  <Link
-                    href="#"
+                  </a>
+                  <a
+                    href="https://www.instagram.com/konbini_code/"
                     className="w-8 h-8 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <Instagram className="w-4 h-4" />
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     href="#"
                     className="w-8 h-8 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <FaFacebook className="w-4 h-4" />
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     href="mailto:konbinicode@gmail.com"
                     className="w-8 h-8 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <Mail className="w-4 h-4" />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </SheetContent>

@@ -148,6 +148,11 @@
     },
     "backToTop": "Volver arriba"
   },
+  "NotFound": {
+    "title": "Página no encontrada",
+    "description": "¡Ups! La página que buscas no existe.",
+    "backToHome": "Volver al inicio"
+  },
   "HeaderSection": {
     "brand": "Konbini Code",
     "menuTitle": "Menú",

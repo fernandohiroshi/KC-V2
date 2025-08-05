@@ -151,6 +151,11 @@
     },
     "backToTop": "トップへ戻る"
   },
+  "NotFound": {
+    "title": "ページが見つかりません",
+    "description": "お探しのページは存在しません。",
+    "backToHome": "ホームに戻る"
+  },
   "HeaderSection": {
     "brand": "Konbini Code",
     "menuTitle": "メニュー",

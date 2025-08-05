@@ -71,9 +71,9 @@ export default function ContactForm() {
               <h2 className="text-2xl font-bold mb-2">{t('title')}</h2>
               <p className="mb-4 text-muted-foreground" dangerouslySetInnerHTML={{ __html: t('description') }} />
               <ul className="mb-4 text-sm text-muted-foreground">
-                <li><strong>{t('addressEmail')}:</strong> contato@konbinicode.com</li>
-                <li><strong>{t('addressPhone')}:</strong> (11) 99999-9999</li>
-                <li><strong>{t('addressTitle')}:</strong> {t('addressStreet')}</li>
+                <li><strong>{t('addressEmail')}:</strong> konbinicode@gmail.com</li>
+                <li><strong>{t('addressPhone')}:</strong> (45) 9 8808-5765</li>
+                <li><strong>{t('addressTitle')}:</strong> Foz do Iguaçu, Paraná, Brazil</li>
               </ul>
             </div>
             <div className="rounded-lg overflow-hidden shadow border transition-transform duration-500 hover:scale-105 hover:shadow-2xl">

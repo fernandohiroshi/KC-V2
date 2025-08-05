@@ -157,5 +157,10 @@
       "contact": "Contato",
       "faq": "FAQ"
     }
+  },
+  "NotFound": {
+    "title": "Página não encontrada",
+    "description": "Ops! A página que você procura não existe.",
+    "backToHome": "Voltar para o Home"
   }
 }

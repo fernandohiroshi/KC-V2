@@ -1,34 +1,39 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import { Montserrat } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import WhatsApp from "@/components/whatsapp";
 import { Toaster } from "sonner";
+import { NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+import { getMessages } from "next-intl/server";
+import type { AbstractIntlMessages } from "next-intl";
 
 export const metadata: Metadata = {
   title: "Konbini Code",
   description: "Konbini Code - Desenvolvimento de Software",
 };
+
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-import { NextIntlClientProvider } from 'next-intl';
-import { notFound } from 'next/navigation';
-import { getMessages } from 'next-intl/server';
-
-export default async function RootLayout(props: Readonly<{
+export default async function RootLayout({
+  children,
+  params,
+}: {
   children: React.ReactNode;
   params: { locale: string };
-}>) {
-  const { children, params } = props;
-  const locale = (await params).locale;
-  let messages;
+}) {
+  const { locale } = await params;
+
+  let messages: AbstractIntlMessages;
+
   try {
     messages = await getMessages();
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
-    notFound();
+    return notFound();
   }
 
   return (
