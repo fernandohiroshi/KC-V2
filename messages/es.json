@@ -1,0 +1,161 @@
+{
+  "HeroSection": {
+    "brand": "Konbini Code",
+    "title": "Transforma Tu Presencia Digital",
+    "about": "Landing pages e identidad visual hechas a medida para pequeños negocios que necesitan presencia online rápida, profesional y accesible.",
+    "ctaBudget": "Solicitar presupuesto",
+    "ctaModels": "Ver modelos de sitios"
+  },
+  "AboutSection": {
+    "label": "SOBRE NOSOTROS",
+    "title": "Presencia digital simple, rápida y con personalidad.",
+    "description": "Inspirados en las tiendas de conveniencia japonesas, combinamos agilidad, simplicidad y tecnología moderna. Ayudamos a negocios locales y profesionales independientes a fortalecer su presencia online con calidad y sin complicaciones. Creamos sitios web y landing pages personalizadas con diseño impactante y funcionalidad. Nuestro enfoque es ser el socio ideal para tu crecimiento digital."
+  },
+  "ServicesSection": {
+    "label": "SERVICIOS",
+    "title": "Descubre las soluciones digitales que ofrecemos.",
+    "items": [
+      {
+        "title": "Landing Page Simple",
+        "description": "Creación rápida de landing pages claras y funcionales para atraer y convertir visitantes."
+      },
+      {
+        "title": "Portafolio Personalizado",
+        "description": "Portafolios con diseño limpio enfocados en presentar tus proyectos de forma profesional."
+      },
+      {
+        "title": "Identidad Visual",
+        "description": "Diseño de logotipo, paleta de colores, tipografía y tarjeta digital para reforzar tu marca."
+      },
+      {
+        "title": "Kit para Redes Sociales",
+        "description": "Kit visual para Instagram: plantillas, portadas de destacados, posts listos y aplicación de identidad visual."
+      },
+      {
+        "title": "Sitios para Eventos",
+        "description": "Desarrollo de sitios prácticos para eventos, con información clara y fácil acceso a los detalles importantes."
+      },
+      {
+        "title": "Sitio Corporativo",
+        "description": "Desarrollo de sitios corporativos con diseño profesional y funcionalidades enfocadas en negocios y empresas."
+      }
+    ]
+  },
+  "ModelsSection": {
+    "title": "¡Mira ejemplos de sitios increíbles <br /> desarrollados para distintos sectores!",
+    "button": "Ver Modelo",
+    "pricePrefix": "R$",
+    "scrollTip": "Usa las flechas, desliza o arrastra con el ratón para ver más modelos",
+    "models": [
+      { "title": "Tienda de Mascotas" },
+      { "title": "Gimnasio" },
+      { "title": "Belleza" },
+      { "title": "Lavado de Autos" },
+      { "title": "Psicóloga" },
+      { "title": "Nutrición" },
+      { "title": "Evento" },
+      { "title": "Cafetería" },
+      { "title": "Periodismo" },
+      { "title": "Barbería" },
+      { "title": "Restaurante" },
+      { "title": "Tatuajes" }
+    ]
+  },
+  "Animate3DSection": {
+    "title": "¿Por qué elegir Konbini Code?",
+    "description": "Lleva tu marca al mundo digital con rapidez y propósito.<br />Diseño funcional, comunicación clara y entrega rápida.<br />Simplicidad estratégica: todo lo que necesitas, nada que estorbe.<br />Y lo mejor: precios accesibles para quienes están comenzando.",
+    "tooltip": "Pasa el ratón para interactuar"
+  },
+  "FAQSection": {
+    "label": "PREGUNTAS FRECUENTES",
+    "title": "Preguntas Frecuentes",
+    "description": "Resuelve tus dudas sobre nuestros servicios y procesos de desarrollo",
+    "ctaTitle": "¿No encontraste la respuesta que buscabas?",
+    "ctaDescription": "Contáctanos a través del formulario abajo y con gusto resolveremos tus dudas.",
+    "items": [
+      {
+        "question": "¿Cuánto tiempo toma crear un sitio web?",
+        "answer": "El plazo promedio es de 1 a 4 días hábiles para sitios simples. Si el proyecto tiene más páginas o funciones específicas, puede tomar algunos días más. Nuestra mayor ventaja es la rapidez combinada con calidad: entregamos rápido sin sacrificar el estándar profesional."
+      },
+      {
+        "question": "¿Cuánto cuesta un sitio web?",
+        "answer": "Los precios comienzan desde R$250 y pueden variar según la complejidad y cantidad de páginas. Nuestro objetivo es mantener precios accesibles ofreciendo sitios de alto nivel visual y técnico. Nota: el dominio (ej: tusitio.com) se contrata por separado, pero te ayudamos en todo el proceso."
+      },
+      {
+        "question": "¿Los sitios se adaptan a diferentes dispositivos?",
+        "answer": "¡Sí! Todos nuestros sitios tienen diseño responsivo, lo que garantiza visualización y funcionamiento perfectos en computadoras, tablets y smartphones. Probamos en múltiples dispositivos y navegadores para asegurar la mejor experiencia."
+      },
+      {
+        "question": "¿Tienen garantía?",
+        "answer": "Ofrecemos 3 meses de garantía para correcciones de errores y ajustes técnicos tras la entrega. Durante este periodo, el mantenimiento correctivo no tiene costo adicional. También ofrecemos soporte técnico y planes de mantenimiento mensual para actualizaciones y mejoras continuas."
+      },
+      {
+        "question": "¿Ofrecen alojamiento?",
+        "answer": "Sí, ofrecemos servicios de alojamiento optimizados para los sitios que desarrollamos. Trabajamos con servidores confiables y rápidos, incluyendo certificado SSL, copias de seguridad automáticas y monitoreo 24/7. También podemos configurar el sitio en el hosting que prefieras."
+      },
+      {
+        "question": "¿Se pueden hacer cambios después de entregar el sitio?",
+        "answer": "¡Claro! Los sitios con CMS te permiten modificar textos, imágenes y contenido básico por tu cuenta. Para cambios más complejos en el diseño o funciones, ofrecemos servicios de mantenimiento y actualización. También brindamos capacitación para usar el panel administrativo."
+      },
+      {
+        "question": "¿Ustedes crean el contenido del sitio?",
+        "answer": "¡Podemos ayudarte con eso! Ofrecemos servicios de redacción, selección de imágenes, optimización SEO y estructuración del contenido. Si ya tienes el material, también podemos adaptarlo para el sitio web."
+      },
+      {
+        "question": "¿El sitio estará optimizado para motores de búsqueda (SEO)?",
+        "answer": "¡Sí! Todos nuestros sitios siguen las mejores prácticas de SEO técnico: URLs limpias, metatags optimizados, estructura semántica, velocidad de carga y compatibilidad móvil. También ofrecemos consultoría de SEO para contenido como servicio adicional."
+      }
+    ]
+  },
+  "ContactSection": {
+    "label": "Contacto",
+    "title": "Habla con Konbini Code",
+    "description": "¿Tienes dudas, sugerencias o deseas solicitar un presupuesto? ¡Contáctanos!<br />Responderemos lo antes posible. Si lo prefieres, visítanos en la dirección abajo.",
+    "addressTitle": "Dirección",
+    "addressEmail": "Correo electrónico",
+    "addressPhone": "Teléfono",
+    "addressStreet": "Rua Exemplo, 123 - São Paulo, SP",
+    "formTitle": "Formulario de Contacto",
+    "formDescription": "Completa el formulario y nos pondremos en contacto contigo lo antes posible.",
+    "fields": {
+      "firstName": { "label": "Nombre", "placeholder": "Tu nombre" },
+      "lastName": { "label": "Apellido", "placeholder": "Tu apellido" },
+      "email": { "label": "Correo electrónico", "placeholder": "Tu email" },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Escribe tu mensaje aquí"
+      }
+    },
+    "button": "Enviar",
+    "loading": "Enviando...",
+    "successMessage": "¡Mensaje enviado con éxito! Nos pondremos en contacto en breve.",
+    "errorMessage": "Error al enviar el mensaje. Intenta nuevamente o usa otro canal."
+  },
+  "FooterSection": {
+    "brandDescription": "Creamos sitios únicos con autenticidad: simples, elegantes y construidos con tecnologías modernas.",
+    "navigationTitle": "NAVEGACIÓN",
+    "navigation": {
+      "home": "Inicio",
+      "about": "Sobre Nosotros",
+      "models": "Modelos",
+      "services": "Servicios"
+    },
+    "supportTitle": "SOPORTE",
+    "support": {
+      "email": "konbinicode@gmail.com",
+      "phone": "+55 (45) 9 8831-1915",
+      "faq": "Preguntas Frecuentes"
+    },
+    "backToTop": "Volver arriba"
+  },
+  "HeaderSection": {
+    "brand": "Konbini Code",
+    "menuTitle": "Menú",
+    "navigation": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "contact": "Contacto",
+      "faq": "FAQ"
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "HeroSection": {
+    "brand": "Konbini Code",
+    "title": "Transform Your Digital Presence",
+    "about": "Custom landing pages and visual identity for small businesses that need a fast, professional, and affordable online presence.",
+    "ctaBudget": "Get a quote",
+    "ctaModels": "View website models"
+  },
+  "AboutSection": {
+    "label": "ABOUT US",
+    "title": "Simple, fast, and personality-driven digital presence.",
+    "description": "Inspired by Japanese convenience stores, we combine speed, simplicity, and modern technology. We help local businesses and freelancers build a strong online presence with quality and ease. We create custom websites and landing pages with standout design and full functionality. Our focus is to be the right partner for your digital growth."
+  },
+  "ServicesSection": {
+    "label": "SERVICES",
+    "title": "Explore the digital solutions we offer.",
+    "items": [
+      {
+        "title": "Simple Landing Page",
+        "description": "Quick creation of clean and functional landing pages designed to attract and convert visitors."
+      },
+      {
+        "title": "Custom Portfolio",
+        "description": "Professional portfolio pages with clean layouts to showcase your projects effectively."
+      },
+      {
+        "title": "Visual Identity",
+        "description": "Logo design, color palette, typography, and digital business cards to strengthen your brand."
+      },
+      {
+        "title": "Social Media Kit",
+        "description": "Instagram visuals: templates, highlight covers, ready-made posts, and applied brand identity for social media."
+      },
+      {
+        "title": "Event Websites",
+        "description": "Practical websites for events, with clear information and easy access to key details."
+      },
+      {
+        "title": "Corporate Website",
+        "description": "Corporate websites with professional design and business-oriented features."
+      }
+    ]
+  },
+  "ModelsSection": {
+    "title": "Check out amazing website examples <br /> developed for different industries!",
+    "button": "View Model",
+    "pricePrefix": "R$",
+    "scrollTip": "Use the arrows, swipe, or drag with the mouse to view more models",
+    "models": [
+      { "title": "Pet Shop" },
+      { "title": "Gym" },
+      { "title": "Beauty" },
+      { "title": "Car Wash" },
+      { "title": "Psychologist" },
+      { "title": "Nutritionist" },
+      { "title": "Event" },
+      { "title": "Snack Bar" },
+      { "title": "Journalism" },
+      { "title": "Barbershop" },
+      { "title": "Restaurant" },
+      { "title": "Tattoo Studio" }
+    ]
+  },
+  "Animate3DSection": {
+    "title": "Why choose Konbini Code?",
+    "description": "Bring your brand online with speed and purpose.<br />Functional design, clear communication, and fast delivery.<br />Strategic simplicity: everything you need, nothing that gets in the way.<br />And best of all: affordable pricing for those just starting out.",
+    "tooltip": "Hover to interact"
+  },
+  "FAQSection": {
+    "label": "FAQ",
+    "title": "Frequently Asked Questions",
+    "description": "Find answers about our services and development process",
+    "ctaTitle": "Didn't find the answer you were looking for?",
+    "ctaDescription": "Send us a message using the form below and we'll be happy to help!",
+    "items": [
+      {
+        "question": "How long does it take to create a website?",
+        "answer": "The average delivery time is 1 to 4 business days for simple websites. Projects with more pages or specific features may take a bit longer. Our biggest strength is combining speed with quality: we deliver fast without sacrificing a professional standard."
+      },
+      {
+        "question": "How much does a website cost?",
+        "answer": "Prices start at R$250 and vary depending on the number of pages and complexity. Our goal is to keep prices accessible while delivering high-quality visuals and performance. Note: the domain (e.g., yoursite.com.br) is purchased separately, but we assist you throughout the process."
+      },
+      {
+        "question": "Are the websites mobile-friendly?",
+        "answer": "Yes! All of our websites are fully responsive, ensuring a smooth experience across desktops, tablets, and smartphones. We test on various devices and browsers to ensure the best user experience."
+      },
+      {
+        "question": "Do you offer any warranty?",
+        "answer": "We offer a 3-month warranty for bug fixes and technical adjustments after delivery. During this time, maintenance is free of charge. We also provide technical support and monthly maintenance plans for ongoing updates and improvements."
+      },
+      {
+        "question": "Do you provide hosting?",
+        "answer": "Yes, we offer optimized hosting for the websites we build. We work with reliable, fast servers, including SSL, automatic backups, and 24/7 monitoring. If you prefer, we can also configure your site on a hosting provider of your choice."
+      },
+      {
+        "question": "Can I make changes to the website after it's completed?",
+        "answer": "Of course! Websites with CMS allow you to update text, images, and basic content yourself. For more complex changes to design or functionality, we offer maintenance and update services. We also provide training to use the admin panel."
+      },
+      {
+        "question": "Do you create the website content?",
+        "answer": "We can help with content creation! We offer copywriting, image selection, SEO optimization, and content structuring. If you already have the content, we can work with your material and adapt it as needed."
+      },
+      {
+        "question": "Will my website be SEO optimized?",
+        "answer": "Yes! We follow SEO best practices for every site: clean URLs, optimized meta tags, semantic structure, fast loading, and mobile compatibility. We also offer content SEO consulting as an additional service."
+      }
+    ]
+  },
+  "ContactSection": {
+    "label": "Contact",
+    "title": "Talk to Konbini Code",
+    "description": "Have questions, suggestions, or want a quote? Contact us!<br />We’ll reply as soon as possible. Or visit us at the address below.",
+    "addressTitle": "Address",
+    "addressEmail": "Email",
+    "addressPhone": "Phone",
+    "addressStreet": "Rua Exemplo, 123 - São Paulo, SP",
+    "formTitle": "Get in Touch",
+    "formDescription": "Fill out the form below and we’ll get back to you shortly.",
+    "fields": {
+      "firstName": { "label": "First Name", "placeholder": "Your first name" },
+      "lastName": { "label": "Last Name", "placeholder": "Your last name" },
+      "email": { "label": "Email", "placeholder": "Your email" },
+      "message": { "label": "Message", "placeholder": "Type your message here" }
+    },
+    "button": "Send",
+    "loading": "Sending...",
+    "successMessage": "Message sent successfully! We’ll be in touch shortly.",
+    "errorMessage": "Error sending message. Please try again or use another contact method."
+  },
+  "FooterSection": {
+    "brandDescription": "We build unique websites full of authenticity: simple, stylish, and powered by modern technologies.",
+    "navigationTitle": "NAVIGATION",
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "models": "Models",
+      "services": "Services"
+    },
+    "supportTitle": "SUPPORT",
+    "support": {
+      "email": "konbinicode@gmail.com",
+      "phone": "+55 (45) 9 8831-1915",
+      "faq": "FAQ"
+    },
+    "backToTop": "Back to top"
+  },
+  "HeaderSection": {
+    "brand": "Konbini Code",
+    "menuTitle": "Menu",
+    "navigation": {
+      "home": "Home",
+      "services": "Services",
+      "contact": "Contact",
+      "faq": "FAQ"
+    }
+  }
+}

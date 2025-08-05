@@ -1,0 +1,161 @@
+{
+  "HeroSection": {
+    "brand": "コンビニコード",
+    "title": "Transforme Sua Presença Digital",
+    "about": "Landing pages e identidade visual feitas sob medida para pequenos negócios que precisam de presença online rápida, profissional e acessível.",
+    "ctaBudget": "Faça seu orçamento",
+    "ctaModels": "Ver modelos de sites"
+  },
+  "AboutSection": {
+    "label": "SOBRE NÓS",
+    "title": "Presença digital simples, rápida e com personalidade.",
+    "description": "Inspirados nas lojas de conveniência japonesas, unimos agilidade, simplicidade e tecnologia moderna. Ajudamos negócios locais e autônomos a fortalecerem sua presença online com qualidade e sem complicação. Criamos sites e landing pages personalizados, com design marcante e funcionalidade. Nosso foco é ser o parceiro certo para seu crescimento no digital."
+  },
+  "ServicesSection": {
+    "label": "SERVIÇOS",
+    "title": "Confira as soluções digitais que oferecemos.",
+    "items": [
+      {
+        "title": "Landing Page Simples",
+        "description": "Criação rápida de landing pages claras e funcionais para atrair e converter visitantes."
+      },
+      {
+        "title": "Portfólio Personalizado",
+        "description": "Criação de portfólios com layout limpo e foco em apresentar seus projetos de maneira profissional."
+      },
+      {
+        "title": "Identidade Visual",
+        "description": "Criação de logotipo, paleta de cores, tipografia e cartão digital para fortalecer sua marca."
+      },
+      {
+        "title": "Social Media",
+        "description": "Kit visual para Instagram: templates, capas para destaques, posts prontos e identidade visual aplicada às redes sociais."
+      },
+      {
+        "title": "Sites para Eventos",
+        "description": "Desenvolvimento de sites práticos para eventos, com informações claras e fácil acesso a detalhes importantes."
+      },
+      {
+        "title": "Site Corporativo",
+        "description": "Desenvolvimento de sites corporativos com design profissional e funcionalidades voltadas para negócios e empresas."
+      }
+    ]
+  },
+  "ModelsSection": {
+    "title": "Veja exemplos de sites incríveis <br /> desenvolvidos para diferentes segmentos!",
+    "button": "Ver Modelo",
+    "pricePrefix": "R$",
+    "scrollTip": "Use as setas, deslize ou arraste com o mouse para ver mais modelos",
+    "models": [
+      { "title": "Pet Shop" },
+      { "title": "Academia" },
+      { "title": "Beleza" },
+      { "title": "Lava Car" },
+      { "title": "Psicóloga" },
+      { "title": "Nutrição" },
+      { "title": "Evento" },
+      { "title": "Lanchonete" },
+      { "title": "Jornalismo" },
+      { "title": "Barbearia" },
+      { "title": "Restaurante" },
+      { "title": "Tattoo" }
+    ]
+  },
+  "Animate3DSection": {
+    "title": "Por que escolher a Konbini Code?",
+    "description": "Leve sua marca para o digital com agilidade e propósito.<br />Design funcional, comunicação descomplicada e entrega rápida.<br />Simplicidade estratégica: tudo que você precisa, nada que atrapalha.<br />E o melhor: valores acessíveis para quem está começando.",
+    "tooltip": "Passe o mouse para interagir"
+  },
+  "FAQSection": {
+    "label": "FAQ",
+    "title": "Perguntas Frequentes",
+    "description": "Tire suas dúvidas sobre nossos serviços e processos de desenvolvimento",
+    "ctaTitle": "Não encontrou a resposta que procurava?",
+    "ctaDescription": "Entre em contato conosco através do formulário abaixo e teremos prazer em esclarecer suas dúvidas!",
+    "items": [
+      {
+        "question": "Quanto tempo leva para criar um site?",
+        "answer": "O prazo médio varia entre 1 a 4 dias úteis para sites simples. Em casos com mais páginas ou funcionalidades específicas, o tempo pode se estender alguns dias. Nosso maior diferencial é a agilidade aliada à qualidade: entregamos rápido, mas sem abrir mão do padrão profissional."
+      },
+      {
+        "question": "Quanto custa um site?",
+        "answer": "Os valores começam a partir de R$250, podendo variar conforme a complexidade e quantidade de páginas. Nosso objetivo é manter preços acessíveis oferecendo sites de alto padrão visual e técnico. Obs.: O domínio (ex: seusite.com.br) é contratado à parte, mas auxiliamos em todo o processo."
+      },
+      {
+        "question": "Os sites são adaptados para diferentes dispositivos?",
+        "answer": "Sim! Todos os nossos sites são desenvolvidos com design responsivo, garantindo perfeita visualização e funcionamento em computadores, tablets e smartphones. Testamos em diversos dispositivos e navegadores para assegurar a melhor experiência do usuário."
+      },
+      {
+        "question": "Tem garantia?",
+        "answer": "Oferecemos 3 meses de garantia para correção de bugs e ajustes técnicos após a entrega do site. Durante este período, realizamos manutenções corretivas sem custo adicional. Também oferecemos suporte técnico e planos de manutenção mensal para atualizações e melhorias contínuas."
+      },
+      {
+        "question": "Vocês fazem a hospedagem do site?",
+        "answer": "Sim, oferecemos serviços de hospedagem otimizada para os sites que desenvolvemos. Trabalhamos com servidores confiáveis e rápidos, incluindo certificado SSL, backups automáticos e monitoramento 24/7. Também podemos configurar seu site em uma hospedagem de sua escolha."
+      },
+      {
+        "question": "É possível fazer alterações no site depois de pronto?",
+        "answer": "Claro! Sites com CMS permitem que você mesmo faça alterações em textos, imagens e conteúdos básicos. Para modificações mais complexas no design ou funcionalidades, oferecemos serviços de manutenção e atualização. Também fornecemos treinamento para uso do painel administrativo."
+      },
+      {
+        "question": "Vocês criam o conteúdo do site?",
+        "answer": "Podemos auxiliar na criação de conteúdo! Oferecemos serviços de copywriting, seleção de imagens, otimização para SEO e estruturação de informações. Se você já tem o conteúdo, também podemos trabalhar com o material fornecido, fazendo as adaptações necessárias."
+      },
+      {
+        "question": "O site terá otimização para mecanismos de busca (SEO)?",
+        "answer": "Sim! Todos os nossos sites são desenvolvidos seguindo as melhores práticas de SEO técnico: URLs amigáveis, meta tags otimizadas, estrutura semântica, velocidade de carregamento otimizada e compatibilidade mobile. Também oferecemos consultoria em SEO de conteúdo como serviço adicional."
+      }
+    ]
+  },
+  "ContactSection": {
+    "label": "Contato",
+    "title": "Fale com a KonbiniCode",
+    "description": "Tem dúvidas, sugestões ou quer fazer um orçamento? Entre em contato conosco!<br />Nossa equipe responderá o mais rápido possível. Se preferir, visite nossa empresa no endereço abaixo.",
+    "addressTitle": "Endereço",
+    "addressEmail": "Email",
+    "addressPhone": "Telefone",
+    "addressStreet": "Rua Exemplo, 123 - São Paulo, SP",
+    "formTitle": "Entre em Contato",
+    "formDescription": "Preencha o formulário abaixo e entraremos em contato o mais breve possível.",
+    "fields": {
+      "firstName": { "label": "Nome", "placeholder": "Seu nome" },
+      "lastName": { "label": "Sobrenome", "placeholder": "Seu sobrenome" },
+      "email": { "label": "Email", "placeholder": "Seu email" },
+      "message": {
+        "label": "Mensagem",
+        "placeholder": "Digite sua mensagem aqui"
+      }
+    },
+    "button": "Enviar",
+    "loading": "Enviando...",
+    "successMessage": "Mensagem enviada com sucesso! Em breve entraremos em contato.",
+    "errorMessage": "Erro ao enviar mensagem. Tente novamente ou use outro canal."
+  },
+  "FooterSection": {
+    "brandDescription": "Criamos sites únicos que respiram autenticidade: simples, estilosos e movidos pelas tecnologias mais atuais.",
+    "navigationTitle": "NAVEGAÇÃO",
+    "navigation": {
+      "home": "Home",
+      "about": "Sobre",
+      "models": "Modelos",
+      "services": "Serviços"
+    },
+    "supportTitle": "SUPORTE",
+    "support": {
+      "email": "konbinicode@gmail.com",
+      "phone": "+55 (45) 9 8831-1915",
+      "faq": "FAQ"
+    },
+    "backToTop": "Voltar ao topo"
+  },
+  "HeaderSection": {
+    "brand": "Konbini Code",
+    "menuTitle": "Menu",
+    "navigation": {
+      "home": "Home",
+      "services": "Serviço",
+      "contact": "Contato",
+      "faq": "FAQ"
+    }
+  }
+}
