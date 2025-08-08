@@ -14,6 +14,9 @@ import type { AbstractIntlMessages } from "next-intl";
 export const metadata: Metadata = {
   title: "Konbini Code",
   description: "Konbini Code - Desenvolvimento de Software",
+  // icons: {
+  //   icon: "",
+  // },
 };
 
 const montserrat = Montserrat({ subsets: ["latin"] });

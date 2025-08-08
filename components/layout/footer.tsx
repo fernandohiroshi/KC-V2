@@ -3,6 +3,7 @@ import { Linkedin, Instagram, ArrowUp } from "lucide-react";
 import { FaFacebook } from "react-icons/fa";
 import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const Footer = () => {
   const t = useTranslations("FooterSection");
@@ -12,9 +13,9 @@ const Footer = () => {
         <div className="w-full flex flex-col lg:flex-row lg:justify-between lg:items-start gap-12 text-start lg:text-left">
           {/* Brand Section */}
           <div className="lg:col-span-1 space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">KC</span>
+            <div className="flex items-center space-x-1">
+              <div className="w-8 h-8 bg-transparent rounded-lg flex items-center justify-center">
+                <Image src="/favicon.png" width={30} height={30} alt="Logo" />
               </div>
               <span className="text-xl font-bold">Konbini Code</span>
             </div>
