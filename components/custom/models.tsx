@@ -108,12 +108,6 @@ const Models = () => {
     },
     {
       id: 11,
-      price: 340,
-      image: "/models/restaurante.webp",
-      url: "https://konbinicode-restaurante-demo.vercel.app/",
-    },
-    {
-      id: 12,
       price: 499,
       image: "/models/tattoo.webp",
       url: "https://konbinicode-tattoo-demo.vercel.app/",
