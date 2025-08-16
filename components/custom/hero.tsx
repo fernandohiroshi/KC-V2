@@ -23,19 +23,20 @@ const Hero = () => {
             <p className="text-lg">{t("about")}</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="#contact">
+            {/* Ajuste para largura igual dos botões */}
+            <Link href="#contact" className="w-full">
               <Button
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all cursor-pointer duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
+                className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all cursor-pointer duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
               >
                 {t("ctaBudget")}
               </Button>
             </Link>
-            <Link href="#models">
+            <Link href="#models" className="w-full">
               <Button
                 variant="outline"
                 size="lg"
-                className="border-primary w-full text-primary hover:bg-primary/10 hover:text-primary cursor-pointer transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
+                className="w-full border-primary text-primary hover:bg-primary/10 hover:text-primary cursor-pointer transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
               >
                 {t("ctaModels")}
               </Button>
