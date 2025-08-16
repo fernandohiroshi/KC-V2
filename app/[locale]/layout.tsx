@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     "agência web",
     "desenvolvimento web em São Paulo",
     "desenvolvimento web Brasil",
-    "Konbini Code"
+    "Konbini Code",
   ],
   metadataBase: new URL("https://konbinicode.com.br"),
   applicationName: "Konbini Code",
@@ -65,8 +65,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Konbini Code", url: "https://konbinicode.com.br" }],
   publisher: "Konbini Code",
   referrer: "origin-when-cross-origin",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
-  themeColor: "#18181b",
   robots: {
     index: true,
     follow: true,
@@ -112,6 +110,13 @@ export const metadata: Metadata = {
   },
 };
 
+export function generateViewport() {
+  return {
+    viewport: "width=device-width, initial-scale=1, maximum-scale=5",
+    themeColor: "#18181b",
+  };
+}
+
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default async function RootLayout({
@@ -119,9 +124,9 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = params;
+  const { locale } = await params;
 
   let messages: AbstractIntlMessages;
 

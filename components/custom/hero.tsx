@@ -23,12 +23,14 @@ const Hero = () => {
             <p className="text-lg">{t("about")}</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
-            >
-              {t("ctaBudget")}
-            </Button>
+            <Link href="#contact">
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all cursor-pointer duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1"
+              >
+                {t("ctaBudget")}
+              </Button>
+            </Link>
             <Link href="#models">
               <Button
                 variant="outline"

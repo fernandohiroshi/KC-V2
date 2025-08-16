@@ -119,7 +119,7 @@ const Header = () => {
                     <Instagram className="w-4 h-4" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/profile.php?id=61579275967882"
                     className="w-8 h-8 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <FaFacebook className="w-4 h-4" />
