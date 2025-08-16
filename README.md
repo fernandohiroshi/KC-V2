@@ -152,7 +152,7 @@ yarn start # or npm start
 ---
 
 ## Contact & Support
-- **Email**: konbinicode@gmail.com
+- **Email**
 - **FAQ**: See the FAQ section on the website for common questions
 
 ---

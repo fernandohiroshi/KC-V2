@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useMemo, useState, useEffect } from "react";
+import DOMPurify from 'dompurify';
 import { useTranslations } from "next-intl";
 import { Canvas, useFrame } from "@react-three/fiber";
 import {
@@ -816,7 +817,7 @@ export default function KonbiniCode3D() {
       </h3>
       <p
         className="text-base text-muted-foreground mt-4 mb-10 text-start leading-relaxed"
-        dangerouslySetInnerHTML={{ __html: t("description") }}
+        dangerouslySetInnerHTML={{ __html: typeof window !== 'undefined' && DOMPurify.sanitize ? DOMPurify.sanitize(t("description")) : t("description") }}
       />
       <div
         className={`w-full h-[600px] bg-transparent rounded-lg overflow-hidden relative transition-all duration-500 cursor-grab ${

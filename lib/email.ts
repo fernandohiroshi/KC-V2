@@ -9,11 +9,9 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const send = async (emailFormData: z.infer<typeof formSchema>) => {
   try {
-    // TODO: Add this emailFormData to some database
-
     const { error } = await resend.emails.send({
-      from: `KONBINI CODE <onboarding@resend.dev>`,
-      to: ["konbinicode@gmail.com"],
+      from: process.env.EMAIL_FROM!,
+      to: [process.env.EMAIL_TO!],
       subject: "Novo contato pelo site!",
       react: EmailTemplate({
         firstName: emailFormData.firstName,
@@ -24,9 +22,9 @@ export const send = async (emailFormData: z.infer<typeof formSchema>) => {
     });
 
     if (error) {
-      throw error;
+      throw new Error("Erro ao enviar e-mail.");
     }
-  } catch (e) {
-    throw e;
+  } catch {
+    throw new Error("Erro ao enviar e-mail.");
   }
 };

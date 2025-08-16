@@ -124,12 +124,6 @@ const Header = () => {
                   >
                     <FaFacebook className="w-4 h-4" />
                   </a>
-                  <a
-                    href="mailto:konbinicode@gmail.com"
-                    className="w-8 h-8 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                  >
-                    <Mail className="w-4 h-4" />
-                  </a>
                 </div>
               </div>
             </SheetContent>

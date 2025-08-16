@@ -101,14 +101,6 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:konbinicode@gmail.com"
-                  className="text-sm hover:text-purple-500 focus:text-purple-500 transition-colors underline-offset-4 hover:underline duration-200"
-                >
-                  {t("support.email")}
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://wa.me/5545988085765"
                   target="_blank"
                   rel="noopener noreferrer"

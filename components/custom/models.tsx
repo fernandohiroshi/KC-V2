@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef, useState, useCallback } from "react";
+import DOMPurify from 'dompurify';
 
 import { useTranslations } from "next-intl";
 
@@ -188,7 +189,7 @@ const Models = () => {
         <div className="text-start space-y-4">
           <h2
             className="text-3xl lg:text-4xl font-bold"
-            dangerouslySetInnerHTML={{ __html: t("title") }}
+            dangerouslySetInnerHTML={{ __html: typeof window !== 'undefined' && DOMPurify.sanitize ? DOMPurify.sanitize(t("title")) : t("title") }}
           />
         </div>
 

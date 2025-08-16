@@ -24,6 +24,7 @@ import {
 } from "@/components/ui/form";
 
 import * as React from "react";
+import DOMPurify from 'dompurify';
 import { toast } from "sonner";
 import { send } from "@/lib/email";
 import { z } from "zod";
@@ -69,9 +70,8 @@ export default function ContactForm() {
           <div className="mb-10 md:mb-0 flex flex-col gap-6">
             <div>
               <h2 className="text-2xl font-bold mb-2">{t('title')}</h2>
-              <p className="mb-4 text-muted-foreground" dangerouslySetInnerHTML={{ __html: t('description') }} />
+              <p className="mb-4 text-muted-foreground" dangerouslySetInnerHTML={{ __html: typeof window !== 'undefined' && DOMPurify.sanitize ? DOMPurify.sanitize(t('description')) : t('description') }} />
               <ul className="mb-4 text-sm text-muted-foreground">
-                <li><strong>{t('addressEmail')}:</strong> konbinicode@gmail.com</li>
                 <li><strong>{t('addressPhone')}:</strong> (45) 9 8808-5765</li>
                 <li><strong>{t('addressTitle')}:</strong> Foz do Iguaçu, Paraná, Brazil</li>
               </ul>
