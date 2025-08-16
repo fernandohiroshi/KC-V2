@@ -47,18 +47,18 @@
     "pricePrefix": "R$",
     "scrollTip": "Use as setas, deslize ou arraste com o mouse para ver mais modelos",
     "models": [
-      { "title": "Pet Shop" },
       { "title": "Academia" },
       { "title": "Beleza" },
-      { "title": "Lava Car" },
+      { "title": "Tattoo" },
+      { "title": "Restaurante" },
       { "title": "Psicóloga" },
       { "title": "Nutrição" },
       { "title": "Evento" },
       { "title": "Lanchonete" },
       { "title": "Jornalismo" },
       { "title": "Barbearia" },
-      { "title": "Restaurante" },
-      { "title": "Tattoo" }
+      { "title": "Pet Shop" },
+      { "title": "Lava Car" }
     ]
   },
   "Animate3DSection": {

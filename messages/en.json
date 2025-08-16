@@ -47,18 +47,18 @@
     "pricePrefix": "R$",
     "scrollTip": "Use the arrows, swipe, or drag with the mouse to view more models",
     "models": [
-      { "title": "Pet Shop" },
       { "title": "Gym" },
       { "title": "Beauty" },
-      { "title": "Car Wash" },
+      { "title": "Tattoo" },
+      { "title": "Restaurant" },
       { "title": "Psychologist" },
-      { "title": "Nutritionist" },
+      { "title": "Nutrition" },
       { "title": "Event" },
       { "title": "Snack Bar" },
       { "title": "Journalism" },
       { "title": "Barbershop" },
-      { "title": "Restaurant" },
-      { "title": "Tattoo Studio" }
+      { "title": "Pet Shop" },
+      { "title": "Car Wash" }
     ]
   },
   "Animate3DSection": {

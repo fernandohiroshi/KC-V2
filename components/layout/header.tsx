@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { ModeToggle } from "../theme-toggle";
-import { Menu, Linkedin, Instagram, Mail } from "lucide-react";
+import { Menu, Linkedin, Instagram } from "lucide-react";
 import { FaFacebook } from "react-icons/fa";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { Button } from "../ui/button";

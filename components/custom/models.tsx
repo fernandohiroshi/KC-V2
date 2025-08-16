@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef, useState, useCallback } from "react";
-import DOMPurify from 'dompurify';
+import DOMPurify from "dompurify";
 
 import { useTranslations } from "next-intl";
 
@@ -23,7 +23,6 @@ const Models = () => {
   const locale = useLocale();
   const modelTitles = t.raw("models") as Array<{ title: string }>;
 
-  // Conversion rates from BRL
   const conversionRates: Record<string, { rate: number; currency: string }> = {
     pt: { rate: 1, currency: "BRL" },
     en: { rate: 0.2, currency: "USD" },
@@ -31,11 +30,9 @@ const Models = () => {
     ja: { rate: 33, currency: "JPY" },
   };
 
-  // Fallback to BRL if locale not found
   const { rate, currency } = conversionRates[locale] || conversionRates["pt"];
 
   function formatPrice(price: number) {
-    // Aumenta 40% se não for pt
     const increase = locale === "pt" ? 1 : 1.2;
     const converted = Math.round(price * rate * increase * 100) / 100;
     return new Intl.NumberFormat(locale, {
@@ -49,27 +46,27 @@ const Models = () => {
   const models = [
     {
       id: 1,
-      price: 320,
-      image: "/models/petshop.webp",
-      url: "https://konbinicode-petshop-demo.vercel.app/",
-    },
-    {
-      id: 2,
       price: 270,
       image: "/models/academia.webp",
       url: "https://konbinicode-academia-demo.vercel.app/",
     },
     {
-      id: 3,
+      id: 2,
       price: 310,
       image: "/models/beleza.webp",
       url: "https://konbinicode-beleza-demo.vercel.app/",
     },
     {
+      id: 3,
+      price: 499,
+      image: "/models/tattoo.webp",
+      url: "https://konbinicode-tattoo-demo.vercel.app/",
+    },
+    {
       id: 4,
-      price: 250,
-      image: "/models/lavacar.webp",
-      url: "https://konbinicode-lavacar-demo.vercel.app/",
+      price: 320,
+      image: "/models/restaurante.webp",
+      url: "https://konbinicode-restaurante-demo.vercel.app/",
     },
     {
       id: 5,
@@ -109,9 +106,15 @@ const Models = () => {
     },
     {
       id: 11,
-      price: 499,
-      image: "/models/tattoo.webp",
-      url: "https://konbinicode-tattoo-demo.vercel.app/",
+      price: 320,
+      image: "/models/petshop.webp",
+      url: "https://konbinicode-petshop-demo.vercel.app/",
+    },
+    {
+      id: 12,
+      price: 250,
+      image: "/models/lavacar.webp",
+      url: "https://konbinicode-lavacar-demo.vercel.app/",
     },
   ];
 
@@ -133,7 +136,6 @@ const Models = () => {
     }
   };
 
-  // Mouse drag functionality
   const handleMouseDown = useCallback((e: React.MouseEvent) => {
     if (!scrollRef.current) return;
 
@@ -141,7 +143,6 @@ const Models = () => {
     setStartX(e.pageX - scrollRef.current.offsetLeft);
     setScrollLeft(scrollRef.current.scrollLeft);
 
-    // Change cursor to grabbing
     scrollRef.current.style.cursor = "grabbing";
     scrollRef.current.style.userSelect = "none";
   }, []);
@@ -152,7 +153,7 @@ const Models = () => {
 
       e.preventDefault();
       const x = e.pageX - scrollRef.current.offsetLeft;
-      const walk = (x - startX) * 2; // Multiply by 2 for faster scrolling
+      const walk = (x - startX) * 2;
       scrollRef.current.scrollLeft = scrollLeft - walk;
     },
     [isDragging, startX, scrollLeft]
@@ -185,17 +186,19 @@ const Models = () => {
         MODELOS
       </p>
       <div className="space-y-12">
-        {/* Header */}
         <div className="text-start space-y-4">
           <h2
             className="text-3xl lg:text-4xl font-bold"
-            dangerouslySetInnerHTML={{ __html: typeof window !== 'undefined' && DOMPurify.sanitize ? DOMPurify.sanitize(t("title")) : t("title") }}
+            dangerouslySetInnerHTML={{
+              __html:
+                typeof window !== "undefined" && DOMPurify.sanitize
+                  ? DOMPurify.sanitize(t("title"))
+                  : t("title"),
+            }}
           />
         </div>
 
-        {/* Horizontal Scroll Container with Navigation */}
         <div className="relative">
-          {/* Left Arrow */}
           <Button
             variant="outline"
             size="icon"
@@ -205,7 +208,6 @@ const Models = () => {
             <ChevronLeft className="w-4 h-4" />
           </Button>
 
-          {/* Right Arrow */}
           <Button
             variant="outline"
             size="icon"
@@ -215,7 +217,6 @@ const Models = () => {
             <ChevronRight className="w-4 h-4" />
           </Button>
 
-          {/* Scrollable Container */}
           <div
             ref={scrollRef}
             className="flex gap-6 overflow-x-auto pb-4 scrollbar-hide px-4 md:px-12 scroll-smooth cursor-grab select-none"
@@ -253,7 +254,7 @@ const Models = () => {
                       {modelTitles[i]?.title}
                     </h3>
                     <Button
-                      className="w-full bg-transparent pointer-events-auto cursor-pointer transition-all duration-300"
+                      className="w-full bg-transparent pointer-events-auto cursor-pointer transition-all duration-300 hover:bg-white hover:text-primary"
                       variant="outline"
                       onMouseDown={(e) => e.stopPropagation()}
                       onClick={() => window.open(model.url, "_blank")}
@@ -267,12 +268,9 @@ const Models = () => {
             ))}
           </div>
 
-          {/* Gradient fades */}
           <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-background to-transparent pointer-events-none" />
           <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-background to-transparent pointer-events-none" />
         </div>
-
-        {/* Scroll indicator */}
         <div className="text-center">
           <p className="text-sm text-muted-foreground">{t("scrollTip")}</p>
         </div>

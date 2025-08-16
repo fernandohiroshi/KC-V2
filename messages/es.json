@@ -47,18 +47,18 @@
     "pricePrefix": "R$",
     "scrollTip": "Usa las flechas, desliza o arrastra con el ratón para ver más modelos",
     "models": [
-      { "title": "Tienda de Mascotas" },
       { "title": "Gimnasio" },
       { "title": "Belleza" },
-      { "title": "Lavado de Autos" },
+      { "title": "Tatuajes" },
+      { "title": "Restaurante" },
       { "title": "Psicóloga" },
       { "title": "Nutrición" },
       { "title": "Evento" },
       { "title": "Cafetería" },
       { "title": "Periodismo" },
       { "title": "Barbería" },
-      { "title": "Restaurante" },
-      { "title": "Tatuajes" }
+      { "title": "Tienda de Mascotas" },
+      { "title": "Lavado de Autos" }
     ]
   },
   "Animate3DSection": {
