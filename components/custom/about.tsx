@@ -11,7 +11,7 @@ const About = () => {
         <div className="relative group">
           <div className="rounded-3xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-105 group-hover:shadow-3xl">
             <video
-              src="https:videos.pexels.com/video-files/8111182/8111182-hd_1920_1080_30fps.mp4"
+              src="https://videos.pexels.com/video-files/8111182/8111182-hd_1920_1080_30fps.mp4"
               autoPlay
               loop
               muted

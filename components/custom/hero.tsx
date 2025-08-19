@@ -45,7 +45,7 @@ const Hero = () => {
         <div className="relative group">
           <div className="rounded-3xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-105 group-hover:shadow-3xl">
             <Image
-              src="https:images.pexels.com/photos/4007744/pexels-photo-4007744.jpeg"
+              src="https://images.pexels.com/photos/4007744/pexels-photo-4007744.jpeg"
               alt="Modern laptop workspace"
               width={600}
               height={500}
