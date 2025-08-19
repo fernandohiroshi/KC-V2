@@ -11,7 +11,6 @@ const Footer = () => {
     <footer className="bg-muted/30 border-t py-8">
       <div className="max-w-6xl mx-auto py-12 px-4">
         <div className="w-full flex flex-col lg:flex-row lg:justify-between lg:items-start gap-12 text-start lg:text-left">
-          {/* Brand Section */}
           <div className="lg:col-span-1 space-y-4">
             <div className="flex items-center space-x-1">
               <div className="w-8 h-8 bg-transparent rounded-lg flex items-center justify-center">
@@ -23,7 +22,6 @@ const Footer = () => {
               {t("brandDescription")}
             </p>
 
-            {/* Social Links */}
             <div className="flex space-x-3 pt-2">
               <a
                 href="https://www.linkedin.com/company/konbini-code"
@@ -52,7 +50,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Navigation Section */}
           <div className="space-y-4">
             <h3 className="font-semibold text-sm uppercase tracking-wider text-muted-foreground">
               {t("navigationTitle")}
@@ -93,7 +90,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Support Section */}
           <div className="space-y-4">
             <h3 className="font-semibold text-sm uppercase tracking-wider text-muted-foreground">
               {t("supportTitle")}

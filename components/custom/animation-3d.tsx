@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useMemo, useState, useEffect } from "react";
-import DOMPurify from 'dompurify';
+
 import { useTranslations } from "next-intl";
 import { Canvas, useFrame } from "@react-three/fiber";
 import {
@@ -17,7 +17,6 @@ import {
 import type { Group, Mesh, Material, MeshStandardMaterial } from "three";
 import { Color, Vector3 } from "three";
 
-// Configuração de cores do tema
 const themeColors = {
   light: {
     building: "#e5e7eb",
@@ -69,7 +68,6 @@ const themeColors = {
   },
 };
 
-// Componente para um único carro cyberpunk
 function CyberCar({
   initialPosition,
   isDark,
@@ -105,7 +103,6 @@ function CyberCar({
       <Box args={[1, 0.5, 1.5]} position={[0, 0.9, -0.2]}>
         <meshStandardMaterial color={colors.window} transparent opacity={0.4} />
       </Box>
-      {/* Headlights */}
       <Box args={[0.3, 0.1, 0.1]} position={[-0.4, 0.4, 1.25]}>
         <meshStandardMaterial
           color={colors.carLights}
@@ -120,7 +117,6 @@ function CyberCar({
           emissiveIntensity={2}
         />
       </Box>
-      {/* Taillights */}
       <Box args={[0.4, 0.15, 0.1]} position={[0, 0.45, -1.25]}>
         <meshStandardMaterial
           color="#ef4444"
@@ -132,7 +128,6 @@ function CyberCar({
   );
 }
 
-// Componente para gerenciar múltiplos carros
 function MovingVehicles({ isDark }: { isDark: boolean }) {
   return (
     <group>
@@ -143,7 +138,6 @@ function MovingVehicles({ isDark }: { isDark: boolean }) {
   );
 }
 
-// Componente para um único robô patrulheiro
 function PatrolRobot({
   isDark,
   initialPosition,
@@ -203,11 +197,9 @@ function PatrolRobot({
   );
 }
 
-// Componente para gerenciar múltiplos robôs
 function RoamingRobots({ isDark }: { isDark: boolean }) {
   return (
     <group>
-      {/* Robô original perto da loja */}
       <PatrolRobot
         isDark={isDark}
         initialPosition={new Vector3(1, 0.2, 4)}
@@ -216,7 +208,6 @@ function RoamingRobots({ isDark }: { isDark: boolean }) {
           max: new Vector3(2, 0.2, 6),
         }}
       />
-      {/* Novo robô do outro lado da rua */}
       <PatrolRobot
         isDark={isDark}
         initialPosition={new Vector3(-2, 0.2, -5)}
@@ -225,7 +216,6 @@ function RoamingRobots({ isDark }: { isDark: boolean }) {
           max: new Vector3(4, 0.2, -4),
         }}
       />
-      {/* Novo robô na calçada distante */}
       <PatrolRobot
         isDark={isDark}
         initialPosition={new Vector3(6, 0.2, 2)}
@@ -238,7 +228,6 @@ function RoamingRobots({ isDark }: { isDark: boolean }) {
   );
 }
 
-// Componente para Semáforo Animado
 function TrafficLight({
   position,
   isDark,
@@ -253,12 +242,10 @@ function TrafficLight({
 
   useFrame(({ clock }) => {
     const time = clock.getElapsedTime();
-    const cycle = Math.floor((time * 0.5) % 8); // Ciclo de 8 segundos
+    const cycle = Math.floor((time * 0.5) % 8);
 
     const lowIntensity = isDark ? 0.1 : 0.05;
     const highIntensity = isDark ? 1.5 : 0.8;
-
-    // Reset all lights
     if (redLight.current)
       (redLight.current.material as MeshStandardMaterial).emissiveIntensity =
         lowIntensity;
@@ -269,21 +256,17 @@ function TrafficLight({
       (greenLight.current.material as MeshStandardMaterial).emissiveIntensity =
         lowIntensity;
 
-    // Animate lights based on cycle
     if (cycle < 4) {
-      // Green
       if (greenLight.current)
         (
           greenLight.current.material as MeshStandardMaterial
         ).emissiveIntensity = highIntensity;
     } else if (cycle < 5) {
-      // Yellow
       if (yellowLight.current)
         (
           yellowLight.current.material as MeshStandardMaterial
         ).emissiveIntensity = highIntensity;
     } else {
-      // Red
       if (redLight.current)
         (redLight.current.material as MeshStandardMaterial).emissiveIntensity =
           highIntensity;
@@ -314,7 +297,6 @@ function TrafficLight({
   );
 }
 
-// Konbini Building
 function KonbiniBuilding({ isDark }: { isDark: boolean }) {
   const colors = isDark ? themeColors.dark : themeColors.light;
   const buildingRef = useRef<Group>(null);
@@ -403,7 +385,6 @@ function KonbiniBuilding({ isDark }: { isDark: boolean }) {
 
   return (
     <group ref={buildingRef} position={[0, 0.2, 0]}>
-      {/* Estrutura e detalhes realistas */}
       <Box args={[7.2, 0.4, 5.7]} position={[0, 0.2, 0]}>
         <meshStandardMaterial color={isDark ? "#0a0a0a" : "#6b7280"} />
       </Box>
@@ -430,7 +411,6 @@ function KonbiniBuilding({ isDark }: { isDark: boolean }) {
         <meshStandardMaterial color="#4b5563" />
       </Cylinder>
 
-      {/* Elementos originais (reposicionados e animados) */}
       <Box args={[5, 2.5, 0.1]} position={[0, 2.5, 2.7]}>
         <meshStandardMaterial
           color={colors.window}
@@ -505,7 +485,7 @@ function KonbiniBuilding({ isDark }: { isDark: boolean }) {
           anchorX="center"
           anchorY="middle"
         >
-          コンビニ
+          コンビニコード
         </Text>
       </group>
       <group ref={catRef} position={[0, 5.4, 0]}>
@@ -655,22 +635,16 @@ function KonbiniBuilding({ isDark }: { isDark: boolean }) {
   );
 }
 
-// Ambiente de rua com mais detalhes
 function StreetEnvironment({ isDark }: { isDark: boolean }) {
   const colors = isDark ? themeColors.dark : themeColors.light;
   return (
     <group>
-      {/* Chão / Estrada */}
       <Box args={[40, 0.2, 60]} position={[0, -0.1, 0]}>
         <meshStandardMaterial color={colors.ground} roughness={0.9} />
       </Box>
-
-      {/* Calçadas */}
       <Box args={[40, 0.2, 12]} position={[0, 0.1, 0]}>
         <meshStandardMaterial color={isDark ? "#1f2937" : "#9ca3af"} />
       </Box>
-
-      {/* Marcas da Rua */}
       <Box args={[0.2, 0.02, 40]} position={[5, 0.02, 0]}>
         <meshStandardMaterial
           color={colors.streetMarkings}
@@ -685,8 +659,6 @@ function StreetEnvironment({ isDark }: { isDark: boolean }) {
           emissiveIntensity={isDark ? 0.2 : 0.1}
         />
       </Box>
-
-      {/* Postes de Luz */}
       <group position={[-6, 0.2, 8]}>
         <Cylinder args={[0.1, 0.1, 5]} position={[0, 2.5, 0]}>
           <meshStandardMaterial color="#374151" />
@@ -718,11 +690,9 @@ function StreetEnvironment({ isDark }: { isDark: boolean }) {
         </Sphere>
       </group>
 
-      {/* Semáforos */}
       <TrafficLight position={[-4.5, 0.2, -10]} isDark={isDark} />
       <TrafficLight position={[4.5, 0.2, 10]} isDark={isDark} />
 
-      {/* Mobiliário Urbano e Detalhes */}
       <Cylinder args={[0.3, 0.3, 0.8]} position={[4, 0.6, -2]}>
         <meshStandardMaterial color="#374151" />
       </Cylinder>
@@ -744,7 +714,6 @@ function StreetEnvironment({ isDark }: { isDark: boolean }) {
   );
 }
 
-// Partículas Flutuantes
 function FloatingParticles({ isDark }: { isDark: boolean }) {
   const particlesRef = useRef<Group>(null);
   const colors = isDark ? themeColors.dark : themeColors.light;
@@ -792,7 +761,6 @@ function FloatingParticles({ isDark }: { isDark: boolean }) {
   );
 }
 
-// Componente Principal
 export default function KonbiniCode3D() {
   const [isHovered, setIsHovered] = useState(false);
   const [isDark, setIsDark] = useState(false);
@@ -812,13 +780,16 @@ export default function KonbiniCode3D() {
   const t = useTranslations("Animate3DSection");
   return (
     <section className="hidden md:block py-16 lg:py-24 max-w-6xl mx-auto mb-24">
-      <h3 className="text-3xl font-bold mb-2 transition-all duration-500 text-foreground text-start">
+      <h3 className="text-3xl font-bold mb-2 transition-all duration-500 text-foreground">
         {t("title")}
       </h3>
-      <p
-        className="text-base text-muted-foreground mt-4 mb-10 text-start leading-relaxed"
-        dangerouslySetInnerHTML={{ __html: typeof window !== 'undefined' && DOMPurify.sanitize ? DOMPurify.sanitize(t("description")) : t("description") }}
-      />
+      <div className="text-base text-muted-foreground mt-4 mb-10 leading-relaxed">
+        <p className="text-justify">{t("description-line1")}</p>
+        <p className="text-justify">{t("description-line2")}</p>
+        <p className="text-justify">{t("description-line3")}</p>
+        <p className="text-justify">{t("description-line4")}</p>
+      </div>
+
       <div
         className={`w-full h-[600px] bg-transparent rounded-lg overflow-hidden relative transition-all duration-500 cursor-grab ${
           isDark

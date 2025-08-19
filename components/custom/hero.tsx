@@ -10,7 +10,6 @@ const Hero = () => {
   return (
     <section className="py-8 md:py-16 lg:py-24 max-w-6xl mx-auto animate-fade-in-up mb-12 md:mb-24">
       <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-        {/* Left Content */}
         <div className="space-y-8 text-start">
           <div className="space-y-6">
             <p className="text-sm font-bold text-purple-600 uppercase animate-pulse tracking-widest">
@@ -20,10 +19,9 @@ const Hero = () => {
               {t("title")}
             </h1>
             <br />
-            <p className="text-lg">{t("about")}</p>
+            <p className="text-lg text-justify">{t("about")}</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            {/* Ajuste para largura igual dos botões */}
             <Link href="#contact" className="w-full">
               <Button
                 size="lg"
@@ -44,11 +42,10 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Visual - Laptop Photo */}
         <div className="relative group">
           <div className="rounded-3xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-105 group-hover:shadow-3xl">
             <Image
-              src="https://images.pexels.com/photos/4007744/pexels-photo-4007744.jpeg"
+              src="https:images.pexels.com/photos/4007744/pexels-photo-4007744.jpeg"
               alt="Modern laptop workspace"
               width={600}
               height={500}

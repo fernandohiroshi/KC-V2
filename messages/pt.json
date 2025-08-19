@@ -42,28 +42,32 @@
     ]
   },
   "ModelsSection": {
-    "title": "Veja exemplos de sites incríveis <br /> desenvolvidos para diferentes segmentos!",
+    "title-line1": "Veja exemplos de sites incríveis",
+    "title-line2": "Desenvolvidos para diferentes segmentos!",
     "button": "Ver Modelo",
     "pricePrefix": "R$",
     "scrollTip": "Use as setas, deslize ou arraste com o mouse para ver mais modelos",
-    "models": [
-      { "title": "Academia" },
-      { "title": "Beleza" },
-      { "title": "Tattoo" },
-      { "title": "Restaurante" },
-      { "title": "Psicóloga" },
-      { "title": "Nutrição" },
-      { "title": "Evento" },
-      { "title": "Lanchonete" },
-      { "title": "Jornalismo" },
-      { "title": "Barbearia" },
-      { "title": "Pet Shop" },
-      { "title": "Lava Car" }
-    ]
+    "models": {
+      "model1": "Academia",
+      "model2": "Beleza",
+      "model3": "Tattoo",
+      "model4": "Restaurante",
+      "model5": "Psicóloga",
+      "model6": "Nutrição",
+      "model7": "Evento",
+      "model8": "Lanchonete",
+      "model9": "Jornalismo",
+      "model10": "Barbearia",
+      "model11": "Pet Shop",
+      "model12": "Lava Car"
+    }
   },
   "Animate3DSection": {
     "title": "Por que escolher a Konbini Code?",
-    "description": "Leve sua marca para o digital com agilidade e propósito.<br />Design funcional, comunicação descomplicada e entrega rápida.<br />Simplicidade estratégica: tudo que você precisa, nada que atrapalha.<br />E o melhor: valores acessíveis para quem está começando.",
+    "description-line1": "Leve sua marca para o digital com agilidade e propósito.",
+    "description-line2": "Design funcional, comunicação descomplicada e entrega rápida.",
+    "description-line3": "Simplicidade estratégica: tudo que você precisa, nada que atrapalha.",
+    "description-line4": "E o melhor: valores acessíveis para quem está começando.",
     "tooltip": "Passe o mouse para interagir"
   },
   "FAQSection": {
@@ -87,32 +91,24 @@
       },
       {
         "question": "Tem garantia?",
-        "answer": "Oferecemos 3 meses de garantia para correção de bugs e ajustes técnicos após a entrega do site. Durante este período, realizamos manutenções corretivas sem custo adicional. Também oferecemos suporte técnico e planos de manutenção mensal para atualizações e melhorias contínuas."
+        "answer": "Oferecemos até 3 ajustes simples após a entrega do site, sem custo adicional. Caso precise de atualizações, melhorias contínuas ou suporte técnico, disponibilizamos planos de manutenção mensal com valores acessíveis."
       },
       {
         "question": "Vocês fazem a hospedagem do site?",
         "answer": "Sim, oferecemos serviços de hospedagem otimizada para os sites que desenvolvemos. Trabalhamos com servidores confiáveis e rápidos, incluindo certificado SSL, backups automáticos e monitoramento 24/7. Também podemos configurar seu site em uma hospedagem de sua escolha."
       },
       {
-        "question": "É possível fazer alterações no site depois de pronto?",
-        "answer": "Claro! Sites com CMS permitem que você mesmo faça alterações em textos, imagens e conteúdos básicos. Para modificações mais complexas no design ou funcionalidades, oferecemos serviços de manutenção e atualização. Também fornecemos treinamento para uso do painel administrativo."
-      },
-      {
-        "question": "Vocês criam o conteúdo do site?",
-        "answer": "Podemos auxiliar na criação de conteúdo! Oferecemos serviços de copywriting, seleção de imagens, otimização para SEO e estruturação de informações. Se você já tem o conteúdo, também podemos trabalhar com o material fornecido, fazendo as adaptações necessárias."
-      },
-      {
         "question": "O site terá otimização para mecanismos de busca (SEO)?",
-        "answer": "Sim! Todos os nossos sites são desenvolvidos seguindo as melhores práticas de SEO técnico: URLs amigáveis, meta tags otimizadas, estrutura semântica, velocidade de carregamento otimizada e compatibilidade mobile. Também oferecemos consultoria em SEO de conteúdo como serviço adicional."
+        "answer": "Sim! Todos os nossos sites são desenvolvidos seguindo as melhores práticas de SEO técnico. Também oferecemos consultoria em SEO de conteúdo como serviço adicional."
       }
     ]
   },
   "ContactSection": {
     "label": "Contato",
     "title": "Fale com a KonbiniCode",
-    "description": "Tem dúvidas, sugestões ou quer fazer um orçamento? Entre em contato conosco!<br />Nossa equipe responderá o mais rápido possível. Se preferir, visite nossa empresa no endereço abaixo.",
-    "addressTitle": "Endereço",
-    "addressEmail": "Email",
+    "description-line1": "Tem dúvidas, sugestões ou quer fazer um orçamento?",
+    "description-line2": "Entre em contato conosco!",
+    "description-line3": "Nossa equipe responderá o mais rápido possível.",
     "addressPhone": "Telefone",
     "addressStreet": "Rua Exemplo, 123 - São Paulo, SP",
     "formTitle": "Entre em Contato",
@@ -132,7 +128,7 @@
     "errorMessage": "Erro ao enviar mensagem. Tente novamente ou use outro canal."
   },
   "FooterSection": {
-    "brandDescription": "Criamos sites únicos que respiram autenticidade: simples, estilosos e movidos pelas tecnologias mais atuais.",
+    "brandDescription": "Desenvolvemos sites autênticos: simples, estilosos e sempre atualizados com as tecnologias mais modernas.",
     "navigationTitle": "NAVEGAÇÃO",
     "navigation": {
       "home": "Home",

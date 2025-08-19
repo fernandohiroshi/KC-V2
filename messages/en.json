@@ -42,28 +42,33 @@
     ]
   },
   "ModelsSection": {
-    "title": "Check out amazing website examples <br /> developed for different industries!",
+    "title-line1": "Check out amazing website examples",
+    "title-line2": "Developed for different industries!",
+    "title": "Check out amazing website examples {br} developed for different industries!",
     "button": "View Model",
     "pricePrefix": "R$",
     "scrollTip": "Use the arrows, swipe, or drag with the mouse to view more models",
-    "models": [
-      { "title": "Gym" },
-      { "title": "Beauty" },
-      { "title": "Tattoo" },
-      { "title": "Restaurant" },
-      { "title": "Psychologist" },
-      { "title": "Nutrition" },
-      { "title": "Event" },
-      { "title": "Snack Bar" },
-      { "title": "Journalism" },
-      { "title": "Barbershop" },
-      { "title": "Pet Shop" },
-      { "title": "Car Wash" }
-    ]
+    "models": {
+      "model1": "Gym",
+      "model2": "Beauty",
+      "model3": "Tattoo",
+      "model4": "Restaurant",
+      "model5": "Psychologist",
+      "model6": "Nutrition",
+      "model7": "Event",
+      "model8": "Snack Bar",
+      "model9": "Journalism",
+      "model10": "Barbershop",
+      "model11": "Pet Shop",
+      "model12": "Car Wash"
+    }
   },
   "Animate3DSection": {
     "title": "Why choose Konbini Code?",
-    "description": "Bring your brand online with speed and purpose.<br />Functional design, clear communication, and fast delivery.<br />Strategic simplicity: everything you need, nothing that gets in the way.<br />And best of all: affordable pricing for those just starting out.",
+    "description-line1": "Take your brand to digital quickly and purposefully.",
+    "description-line2": "Functional design, straightforward communication, and fast delivery.",
+    "description-line3": "Strategic simplicity: everything you need, nothing that gets in the way.",
+    "description-line4": "And the best: affordable prices for those just starting out.",
     "tooltip": "Hover to interact"
   },
   "FAQSection": {
@@ -79,7 +84,7 @@
       },
       {
         "question": "How much does a website cost?",
-        "answer": "Prices start at R$250 and vary depending on the number of pages and complexity. Our goal is to keep prices accessible while delivering high-quality visuals and performance. Note: the domain (e.g., yoursite.com.br) is purchased separately, but we assist you throughout the process."
+        "answer": "Prices start at R$200 and vary depending on the number of pages and complexity. Our goal is to keep prices accessible while delivering high-quality visuals and performance. Note: the domain (e.g., yoursite.com.br) is purchased separately, but we assist you throughout the process."
       },
       {
         "question": "Are the websites mobile-friendly?",
@@ -87,19 +92,11 @@
       },
       {
         "question": "Do you offer any warranty?",
-        "answer": "We offer a 3-month warranty for bug fixes and technical adjustments after delivery. During this time, maintenance is free of charge. We also provide technical support and monthly maintenance plans for ongoing updates and improvements."
+        "answer": "We offer up to 3 simple adjustments after the website delivery at no extra cost. If you need updates, continuous improvements, or technical support, we provide monthly maintenance plans at affordable rates."
       },
       {
         "question": "Do you provide hosting?",
         "answer": "Yes, we offer optimized hosting for the websites we build. We work with reliable, fast servers, including SSL, automatic backups, and 24/7 monitoring. If you prefer, we can also configure your site on a hosting provider of your choice."
-      },
-      {
-        "question": "Can I make changes to the website after it's completed?",
-        "answer": "Of course! Websites with CMS allow you to update text, images, and basic content yourself. For more complex changes to design or functionality, we offer maintenance and update services. We also provide training to use the admin panel."
-      },
-      {
-        "question": "Do you create the website content?",
-        "answer": "We can help with content creation! We offer copywriting, image selection, SEO optimization, and content structuring. If you already have the content, we can work with your material and adapt it as needed."
       },
       {
         "question": "Will my website be SEO optimized?",
@@ -110,9 +107,9 @@
   "ContactSection": {
     "label": "Contact",
     "title": "Talk to Konbini Code",
-    "description": "Have questions, suggestions, or want a quote? Contact us!<br />We’ll reply as soon as possible. Or visit us at the address below.",
-    "addressTitle": "Address",
-    "addressEmail": "Email",
+    "description-line1": "Have questions, suggestions, or want a quote?",
+    "description-line2": "Contact us!",
+    "description-line3": "We’ll reply as soon as possible.",
     "addressPhone": "Phone",
     "addressStreet": "Rua Exemplo, 123 - São Paulo, SP",
     "formTitle": "Get in Touch",
@@ -129,7 +126,7 @@
     "errorMessage": "Error sending message. Please try again or use another contact method."
   },
   "FooterSection": {
-    "brandDescription": "We build unique websites full of authenticity: simple, stylish, and powered by modern technologies.",
+    "brandDescription": "We develop authentic websites: simple, stylish, and always up to date with the latest technologies.",
     "navigationTitle": "NAVIGATION",
     "navigation": {
       "home": "Home",

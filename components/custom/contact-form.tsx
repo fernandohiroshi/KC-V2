@@ -24,12 +24,12 @@ import {
 } from "@/components/ui/form";
 
 import * as React from "react";
-import DOMPurify from 'dompurify';
 import { toast } from "sonner";
 import { send } from "@/lib/email";
 import { z } from "zod";
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
+import { MapPin, Smartphone } from "lucide-react";
 
 export default function ContactForm() {
   const form = useForm<z.infer<typeof formSchema>>({
@@ -44,36 +44,48 @@ export default function ContactForm() {
 
   const [loading, setLoading] = React.useState(false);
 
-  const t = useTranslations('ContactSection');
+  const t = useTranslations("ContactSection");
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setLoading(true);
     try {
       await send(values);
-      toast.success(t('successMessage'));
+      toast.success(t("successMessage"));
       form.reset();
-      
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    } catch (error) {
-      toast.error(t('errorMessage'));
+    } catch {
+      toast.error(t("errorMessage"));
     } finally {
       setLoading(false);
     }
   }
 
   return (
-    <section className="py-8 md:py-16 lg:py-24 md:px-4 bg-background text-foreground animate-fade-in-up max-w-6xl mx-auto mb-12 md:mb-24" id="contact">
+    <section
+      className="py-8 md:py-16 lg:py-24 md:px-4 bg-background text-foreground animate-fade-in-up max-w-6xl mx-auto mb-12 md:mb-24"
+      id="contact"
+    >
       <div className="container mx-auto">
-        <p className="text-sm font-medium text-muted-foreground tracking-wider uppercase mb-2">{t('label')}</p>
+        <p className="text-sm font-medium text-muted-foreground tracking-wider uppercase mb-2">
+          {t("label")}
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-    
           <div className="mb-10 md:mb-0 flex flex-col gap-6">
             <div>
-              <h2 className="text-2xl font-bold mb-2">{t('title')}</h2>
-              <p className="mb-4 text-muted-foreground" dangerouslySetInnerHTML={{ __html: typeof window !== 'undefined' && DOMPurify.sanitize ? DOMPurify.sanitize(t('description')) : t('description') }} />
+              <h2 className="text-2xl font-bold mb-2">{t("title")}</h2>
+              <div className="mb-4 text-muted-foreground">
+                <p className="text-justify">{t("description-line1")}</p>
+                <p className="text-justify">{t("description-line2")}</p>
+                <p className="text-justify">{t("description-line3")}</p>
+              </div>
               <ul className="mb-4 text-sm text-muted-foreground">
-                <li><strong>{t('addressPhone')}:</strong> (45) 9 8808-5765</li>
-                <li><strong>{t('addressTitle')}:</strong> Foz do Iguaçu, Paraná, Brazil</li>
+                <li className="flex items-center gap-1 mb-2">
+                  <Smartphone size={16} className="text-purple-400" /> (45) 9
+                  8808-5765
+                </li>
+                <li className="flex items-center gap-1">
+                  <MapPin size={16} className="text-purple-400" /> Foz do
+                  Iguaçu, Paraná, Brazil
+                </li>
               </ul>
             </div>
             <div className="rounded-lg overflow-hidden shadow border transition-transform duration-500 hover:scale-105 hover:shadow-2xl">
@@ -89,16 +101,14 @@ export default function ContactForm() {
               ></iframe>
             </div>
           </div>
-  
+
           <div>
             <Card className="mx-auto transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-              <CardHeader className="text-center">
+              <CardHeader className="text-start">
                 <CardTitle className="text-xl md:text-2xl font-bold mb-2">
-                  {t('formTitle')}
+                  {t("formTitle")}
                 </CardTitle>
-                <CardDescription>
-                  {t('formDescription')}
-                </CardDescription>
+                <CardDescription>{t("formDescription")}</CardDescription>
               </CardHeader>
               <CardContent>
                 <Form {...form}>
@@ -113,9 +123,16 @@ export default function ContactForm() {
                           name="firstName"
                           render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="font-medium">{t('fields.firstName.label')}</FormLabel>
+                              <FormLabel className="font-medium">
+                                {t("fields.firstName.label")}
+                              </FormLabel>
                               <FormControl>
-                                <Input placeholder={t('fields.firstName.placeholder')} {...field} />
+                                <Input
+                                  placeholder={t(
+                                    "fields.firstName.placeholder"
+                                  )}
+                                  {...field}
+                                />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -129,10 +146,13 @@ export default function ContactForm() {
                           render={({ field }) => (
                             <FormItem>
                               <FormLabel className="font-medium">
-                                {t('fields.lastName.label')}
+                                {t("fields.lastName.label")}
                               </FormLabel>
                               <FormControl>
-                                <Input placeholder={t('fields.lastName.placeholder')} {...field} />
+                                <Input
+                                  placeholder={t("fields.lastName.placeholder")}
+                                  {...field}
+                                />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -146,9 +166,14 @@ export default function ContactForm() {
                         name="email"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="font-medium">{t('fields.email.label')}</FormLabel>
+                            <FormLabel className="font-medium">
+                              {t("fields.email.label")}
+                            </FormLabel>
                             <FormControl>
-                              <Input placeholder={t('fields.email.placeholder')} {...field} />
+                              <Input
+                                placeholder={t("fields.email.placeholder")}
+                                {...field}
+                              />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -161,11 +186,13 @@ export default function ContactForm() {
                         name="message"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="font-medium">{t('fields.message.label')}</FormLabel>
+                            <FormLabel className="font-medium">
+                              {t("fields.message.label")}
+                            </FormLabel>
                             <FormControl>
                               <Textarea
                                 id="message"
-                                placeholder={t('fields.message.placeholder')}
+                                placeholder={t("fields.message.placeholder")}
                                 className="min-h-[120px] resize-none"
                                 {...field}
                               />
@@ -181,7 +208,7 @@ export default function ContactForm() {
                         disabled={loading}
                         className="px-8 py-3 transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1 hover:bg-primary/90"
                       >
-                        {loading ? t('loading') : t('button')}
+                        {loading ? t("loading") : t("button")}
                       </Button>
                     </div>
                   </form>

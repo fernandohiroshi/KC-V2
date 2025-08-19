@@ -107,19 +107,19 @@ const Header = () => {
               <div className="absolute bottom-0 left-0 w-full pb-6">
                 <div className="flex justify-center gap-3">
                   <a
-                    href="https://www.linkedin.com/company/konbini-code"
+                    href="https:www.linkedin.com/company/konbini-code"
                     className="w-8 h-8 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <Linkedin className="w-4 h-4" />
                   </a>
                   <a
-                    href="https://www.instagram.com/konbini_code/"
+                    href="https:www.instagram.com/konbini_code/"
                     className="w-8 h-8 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <Instagram className="w-4 h-4" />
                   </a>
                   <a
-                    href="https://www.facebook.com/profile.php?id=61579275967882"
+                    href="https:www.facebook.com/profile.php?id=61579275967882"
                     className="w-8 h-8 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <FaFacebook className="w-4 h-4" />

@@ -42,28 +42,33 @@
     ]
   },
   "ModelsSection": {
-    "title": "¡Mira ejemplos de sitios increíbles <br /> desarrollados para distintos sectores!",
+    "title-line1": "Mira ejemplos de sitios increíbles",
+    "title-line2": "¡Desarrollados para distintos sectores!",
+    "title": "¡Mira ejemplos de sitios increíbles {br} desarrollados para distintos sectores!",
     "button": "Ver Modelo",
     "pricePrefix": "R$",
     "scrollTip": "Usa las flechas, desliza o arrastra con el ratón para ver más modelos",
-    "models": [
-      { "title": "Gimnasio" },
-      { "title": "Belleza" },
-      { "title": "Tatuajes" },
-      { "title": "Restaurante" },
-      { "title": "Psicóloga" },
-      { "title": "Nutrición" },
-      { "title": "Evento" },
-      { "title": "Cafetería" },
-      { "title": "Periodismo" },
-      { "title": "Barbería" },
-      { "title": "Tienda de Mascotas" },
-      { "title": "Lavado de Autos" }
-    ]
+    "models": {
+      "model1": "Gimnasio",
+      "model2": "Belleza",
+      "model3": "Tatuajes",
+      "model4": "Restaurante",
+      "model5": "Psicóloga",
+      "model6": "Nutrición",
+      "model7": "Evento",
+      "model8": "Cafetería",
+      "model9": "Periodismo",
+      "model10": "Barbería",
+      "model11": "Tienda de Mascotas",
+      "model12": "Lavado de Autos"
+    }
   },
   "Animate3DSection": {
     "title": "¿Por qué elegir Konbini Code?",
-    "description": "Lleva tu marca al mundo digital con rapidez y propósito.<br />Diseño funcional, comunicación clara y entrega rápida.<br />Simplicidad estratégica: todo lo que necesitas, nada que estorbe.<br />Y lo mejor: precios accesibles para quienes están comenzando.",
+    "description-line1": "Lleva tu marca al mundo digital con rapidez y propósito.",
+    "description-line2": "Diseño funcional, comunicación sencilla y entrega rápida.",
+    "description-line3": "Simplicidad estratégica: todo lo que necesitas, nada que estorbe.",
+    "description-line4": "Y lo mejor: precios accesibles para quienes recién comienzan.",
     "tooltip": "Pasa el ratón para interactuar"
   },
   "FAQSection": {
@@ -79,7 +84,7 @@
       },
       {
         "question": "¿Cuánto cuesta un sitio web?",
-        "answer": "Los precios comienzan desde R$250 y pueden variar según la complejidad y cantidad de páginas. Nuestro objetivo es mantener precios accesibles ofreciendo sitios de alto nivel visual y técnico. Nota: el dominio (ej: tusitio.com) se contrata por separado, pero te ayudamos en todo el proceso."
+        "answer": "Los precios comienzan desde R$200 y pueden variar según la complejidad y cantidad de páginas. Nuestro objetivo es mantener precios accesibles ofreciendo sitios de alto nivel visual y técnico. Nota: el dominio (ej: tusitio.com) se contrata por separado, pero te ayudamos en todo el proceso."
       },
       {
         "question": "¿Los sitios se adaptan a diferentes dispositivos?",
@@ -87,19 +92,11 @@
       },
       {
         "question": "¿Tienen garantía?",
-        "answer": "Ofrecemos 3 meses de garantía para correcciones de errores y ajustes técnicos tras la entrega. Durante este periodo, el mantenimiento correctivo no tiene costo adicional. También ofrecemos soporte técnico y planes de mantenimiento mensual para actualizaciones y mejoras continuas."
+        "answer": "Ofrecemos hasta 3 ajustes simples después de la entrega del sitio, sin costo adicional. Si necesita actualizaciones, mejoras continuas o soporte técnico, contamos con planes de mantenimiento mensual a precios accesibles."
       },
       {
         "question": "¿Ofrecen alojamiento?",
         "answer": "Sí, ofrecemos servicios de alojamiento optimizados para los sitios que desarrollamos. Trabajamos con servidores confiables y rápidos, incluyendo certificado SSL, copias de seguridad automáticas y monitoreo 24/7. También podemos configurar el sitio en el hosting que prefieras."
-      },
-      {
-        "question": "¿Se pueden hacer cambios después de entregar el sitio?",
-        "answer": "¡Claro! Los sitios con CMS te permiten modificar textos, imágenes y contenido básico por tu cuenta. Para cambios más complejos en el diseño o funciones, ofrecemos servicios de mantenimiento y actualización. También brindamos capacitación para usar el panel administrativo."
-      },
-      {
-        "question": "¿Ustedes crean el contenido del sitio?",
-        "answer": "¡Podemos ayudarte con eso! Ofrecemos servicios de redacción, selección de imágenes, optimización SEO y estructuración del contenido. Si ya tienes el material, también podemos adaptarlo para el sitio web."
       },
       {
         "question": "¿El sitio estará optimizado para motores de búsqueda (SEO)?",
@@ -110,9 +107,9 @@
   "ContactSection": {
     "label": "Contacto",
     "title": "Habla con Konbini Code",
-    "description": "¿Tienes dudas, sugerencias o deseas solicitar un presupuesto? ¡Contáctanos!<br />Responderemos lo antes posible. Si lo prefieres, visítanos en la dirección abajo.",
-    "addressTitle": "Dirección",
-    "addressEmail": "Correo electrónico",
+    "description-line1": "¿Tienes dudas, sugerencias o deseas solicitar un presupuesto?",
+    "description-line2": "¡Contáctanos!",
+    "description-line3": "Responderemos lo antes posible.",
     "addressPhone": "Teléfono",
     "addressStreet": "Rua Exemplo, 123 - São Paulo, SP",
     "formTitle": "Formulario de Contacto",
@@ -132,7 +129,7 @@
     "errorMessage": "Error al enviar el mensaje. Intenta nuevamente o usa otro canal."
   },
   "FooterSection": {
-    "brandDescription": "Creamos sitios únicos con autenticidad: simples, elegantes y construidos con tecnologías modernas.",
+    "brandDescription": "Desarrollamos sitios web auténticos: simples, elegantes y siempre actualizados con las tecnologías más modernas.",
     "navigationTitle": "NAVEGACIÓN",
     "navigation": {
       "home": "Inicio",

@@ -14,11 +14,14 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 
 const Services = () => {
-  const t = useTranslations('ServicesSection');
-  const services = t.raw('items') as Array<{ title: string; description: string }>;
+  const t = useTranslations("ServicesSection");
+  const services = t.raw("items") as Array<{
+    title: string;
+    description: string;
+  }>;
   const icons = [Globe, User, Palette, Instagram, Calendar, Building];
 
   return (
@@ -26,16 +29,14 @@ const Services = () => {
       className="py-8 md:py-16 lg:py-24 max-w-6xl mx-auto animate-fade-in-up mb-12 md:mb-24"
       id="services"
     >
-      <p className="text-sm font-medium text-muted-foreground tracking-wider uppercase mb-2">{t('label')}</p>
+      <p className="text-sm font-medium text-muted-foreground tracking-wider uppercase mb-2">
+        {t("label")}
+      </p>
       <div className="space-y-12">
-        {/* Header */}
         <div className="text-start space-y-4">
-          <h2 className="text-3xl lg:text-4xl font-bold">
-            {t('title')}
-          </h2>
+          <h2 className="text-3xl lg:text-4xl font-bold">{t("title")}</h2>
         </div>
 
-        {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
             const Icon = icons[index];
@@ -51,7 +52,7 @@ const Services = () => {
                   <CardTitle className="text-lg">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm leading-relaxed">
+                  <CardDescription className="text-sm leading-relaxed text-justify">
                     {service.description}
                   </CardDescription>
                 </CardContent>

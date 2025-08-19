@@ -1,7 +1,7 @@
 import { IoLogoWhatsapp } from "react-icons/io";
 
 const whatsappNumber = "5545988085765";
-const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+const whatsappUrl = `https:wa.me/${whatsappNumber}`;
 
 const WhatsApp = () => {
   return (

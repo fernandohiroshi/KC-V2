@@ -17,7 +17,6 @@ const FAQ = () => {
       id="faq"
     >
       <div className="max-w-4xl mx-auto space-y-12">
-        {/* Header */}
         <div className="text-start space-y-4">
           <p className="text-sm font-medium text-muted-foreground tracking-wider uppercase">
             {t("label")}
@@ -28,7 +27,6 @@ const FAQ = () => {
           </p>
         </div>
 
-        {/* FAQ Accordion */}
         <div className="bg-background rounded-2xl border shadow-sm md:p-8">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
@@ -37,10 +35,10 @@ const FAQ = () => {
                 value={`item-${index}`}
                 className="border-b last:border-b-0 transition-all duration-300 data-[state=open]:shadow-md"
               >
-                <AccordionTrigger className="text-left hover:text-purple-500 data-[state=open]:text-purple-500 hover:no-underline p-4 text-base font-medium transition-colors duration-200">
+                <AccordionTrigger className="hover:text-purple-500 data-[state=open]:text-purple-500 hover:no-underline p-4 text-base font-medium transition-colors duration-200 text-justify">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed p-4 text-base transition-colors duration-200">
+                <AccordionContent className="text-muted-foreground leading-relaxed p-4 text-base transition-colors duration-200 text-justify">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -48,9 +46,10 @@ const FAQ = () => {
           </Accordion>
         </div>
 
-        {/* CTA */}
-        <div className="text-start pt-8">
-          <p className="text-muted-foreground mb-2">{t("ctaTitle")}</p>
+        <div className="text-start">
+          <p className="text-muted-foreground mb-2 font-bold">
+            {t("ctaTitle")}
+          </p>
           <p className="text-sm text-muted-foreground">{t("ctaDescription")}</p>
         </div>
       </div>
