@@ -4,7 +4,7 @@ import Services from "@/components/custom/services";
 import Models from "@/components/custom/models";
 import FAQ from "@/components/custom/faq";
 import ContactForm from "@/components/custom/contact-form";
-import Animation3D from "@/components/custom/animation-3d";
+import BrandingSection from "@/components/custom/branding-section";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <About />
       <Services />
       <Models />
-      <Animation3D />
+      <BrandingSection />
       <FAQ />
       <ContactForm />
     </main>

@@ -169,7 +169,7 @@ const Models = () => {
 
   return (
     <section
-      className="py-8 md:py-16 lg:py-24 max-w-6xl mx-auto animate-fade-in-up mb-12 md:mb-24"
+      className="py-8 md:py-16 lg:py-24 max-w-6xl mx-auto animate-fade-in-up"
       id="models"
     >
       <p className="text-sm font-medium text-muted-foreground tracking-wider uppercase mb-2">
